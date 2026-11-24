@@ -1,0 +1,8 @@
+// Illustrative controls only; no data leaves this page.
+const settings=[...document.querySelectorAll('[data-setting]')];
+const count=document.getElementById('count'),progress=document.getElementById('progress'),advice=document.getElementById('advice');
+function sync(){const n=settings.filter(x=>x.checked).length;count.textContent=n+' of 4';progress.value=n;advice.textContent=n===4?'All four practice actions selected. Continue to use judgement and seek help when needed.':n===0?'Start with privacy and contact settings. No settings can guarantee safety.':'Good progress. Explore the remaining settings, and remember that no game is risk-free.'}
+settings.forEach(x=>x.addEventListener('change',sync));document.getElementById('reset').addEventListener('click',()=>{settings.forEach(x=>x.checked=false);sync()});sync();
+const choices=[...document.querySelectorAll('[data-answer]')],feedback=document.getElementById('feedback');const explanations=['Your school can reveal your identity or location. Keep this information private.','Good choice. You do not need to share personal information. Stop contact if needed and talk to a trusted adult.','Your address is private too. Avoid sharing it with unfamiliar players.'];
+choices.forEach(b=>{b.setAttribute('aria-pressed','false');b.addEventListener('click',()=>{choices.forEach(x=>x.setAttribute('aria-pressed',String(x===b)));feedback.textContent=explanations[Number(b.dataset.answer)]})});
+document.getElementById('retry').addEventListener('click',()=>{choices.forEach(x=>x.setAttribute('aria-pressed','false'));feedback.textContent='Choose an option to see why it matters.';choices[0].focus()});
