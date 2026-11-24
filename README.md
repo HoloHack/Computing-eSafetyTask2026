@@ -1,25 +1,20 @@
-# SIGNAL / eSafety Task 3
+# SIGNAL — Better games. Safer play.
 
-An interactive educational web experience, designed for a school audience.
+Interactive classroom research experience comparing online games and their safety features.
 
-**Status:** discovery and prototype; the exact Task 3 wording and marking criteria have not been supplied or recovered. The initial content assumes online gaming safety based on Tasks 1–2, not a confirmed rubric.
+**Confirmed scope:** compare types of online games, evaluate their protections and show how developers can improve safety. Informal class presentation, not a marked assessment.
 
-## Project goals
-- Make online safety actionable through scenarios, understandable controls, and evidence-led explanations.
-- Build one coherent, accessible visual language rather than a collection of unrelated animated widgets.
-- Use a static, privacy-preserving site; no accounts, tracking, real chats, or external submission of information.
-- Maintain fast, responsive layouts and support keyboard navigation and reduced motion.
+## Run
+Open `index.html` directly, or from the repository root use `python3 -m http.server 8000` then visit http://localhost:8000. No npm installation needed.
 
-## Project files
-- `docs/BLUEPRINT.md`: design, research, architecture and acceptance plan.
-- `index.html`, `styles.css`, `app.js`: provisional interactive prototype (when present).
+## Contents
+- Four researched game evaluations, comparison and independent eSafety evidence.
+- Developer Studio and three scenario cases with feedback.
+- Sources and presentation walkthrough.
+- `docs/PRODUCTION.md` — confirmed plan and release checks.
 
-## Preview
-Open `index.html` in a browser, or serve this directory locally with `python3 -m http.server 8000`. GitHub Pages is not yet configured or verified.
+## Deployment
+Static GitHub Pages: Settings → Pages → Deploy from a branch → main → /(root). This repository's Pages configuration and live URL have not been verified. The website uses relative paths, no third-party runtime, and no collection of student data.
 
-## Sources
-- https://www.esafety.gov.au/young-people/online-gaming
-- https://www.esafety.gov.au/parents/issues-and-advice/gaming
-
-## Scope gate
-Confirm the exact Task 3 instructions before promoting this prototype to a final submission. Third-party assets and code require license and provenance review. No blanket license is assigned to the student's coursework or third-party assets.
+## Notes
+Developer safeguards are illustrative and not a safety score. Source evidence varies by platform, account, region and update. No blanket license assigned to the user's coursework.
